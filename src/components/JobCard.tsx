@@ -3,8 +3,8 @@ import { Job } from "@/types/job";
 
 export default function JobCard({ job }: { job: Job }) {
   return (
-    <div className="border-1 p-5 shadow-sm  hover:shadow-md transition bg-white  dark:border-gray-200">
-      <h2 className="text-lg font-semibold text-[#4640DE]">{job.title}</h2>
+     <div className="rounded-2xl border-1 p-6 shadow-sm  hover:shadow-md transition bg-white  dark:border-gray-200">
+      <h2 className="text-lg font-semibold text-[#4640DE] mb-1">{job.title}</h2>
       <p className="text-sm text-gray-600 dark:text-gray-300">{job.company}</p>
       <p className="text-sm text-gray-500 dark:text-gray-400">
         {job.location} · {job.type}
