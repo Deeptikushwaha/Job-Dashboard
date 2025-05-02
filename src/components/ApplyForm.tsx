@@ -119,7 +119,7 @@ export default function ApplyForm({ jobId }: ApplyFormProps) {
     <div>
       <form onSubmit={formik.handleSubmit} className="space-y-4">
         <div>
-          <label className="block font-medium text-sm mb-1 text-gray-700 dark:text-gray-200">
+          <label className="block font-medium text-sm mb-1 text-black dark:text-gray-700">
             Full Name
           </label>
           <input
@@ -127,7 +127,7 @@ export default function ApplyForm({ jobId }: ApplyFormProps) {
             name="name"
             onChange={formik.handleChange}
             value={formik.values.name}
-            className="w-full p-2 border  dark:border-gray-200 rounded-md"
+            className="w-full p-2 border  dark:border-gray-700 rounded-md"
             disabled={!mounted}
           />
           {mounted && formik.touched.name && formik.errors.name && (
@@ -136,7 +136,7 @@ export default function ApplyForm({ jobId }: ApplyFormProps) {
         </div>
  
         <div>
-          <label className="block font-medium text-sm mb-1 text-gray-700 dark:text-gray-200">
+          <label className="block font-medium text-sm mb-1 text-gray-700 dark:text-gray-700">
             Email
           </label>
           <input
@@ -144,7 +144,7 @@ export default function ApplyForm({ jobId }: ApplyFormProps) {
             name="email"
             onChange={formik.handleChange}
             value={formik.values.email}
-            className="w-full p-2 border dark:border-gray-200 rounded-md"
+            className="w-full p-2 border dark:border-gray-600 rounded-md"
             disabled={!mounted}
           />
           {mounted && formik.touched.email && formik.errors.email && (
@@ -153,7 +153,7 @@ export default function ApplyForm({ jobId }: ApplyFormProps) {
         </div>
 
         <div>
-          <label className="block font-medium text-sm mb-1 text-gray-700 dark:text-gray-200">
+          <label className="block font-medium text-sm mb-1 text-gray-700 dark:text-gray-700">
             Resume Link
           </label>
           <input
@@ -161,7 +161,7 @@ export default function ApplyForm({ jobId }: ApplyFormProps) {
             name="resumeLink"
             onChange={formik.handleChange}
             value={formik.values.resumeLink}
-            className="w-full p-2 border  dark:border-gray-200 rounded-md"
+            className="w-full p-2 border  dark:border-gray-600 rounded-md"
             disabled={!mounted}
           />
           {mounted && formik.touched.resumeLink && formik.errors.resumeLink && (
@@ -170,7 +170,7 @@ export default function ApplyForm({ jobId }: ApplyFormProps) {
         </div>
 
         <div>
-          <label className="block font-medium text-sm mb-1 text-gray-700 dark:text-gray-200">
+          <label className="block font-medium text-sm mb-1 text-gray-700 dark:text-gray-700">
             Cover Letter
           </label>
           <textarea
@@ -178,7 +178,7 @@ export default function ApplyForm({ jobId }: ApplyFormProps) {
             rows={5}
             onChange={formik.handleChange}
             value={formik.values.coverLetter}
-            className="w-full p-2 border  dark:border-gray-200  rounded-md"
+            className="w-full p-2 border  dark:border-gray-600  rounded-md"
             disabled={!mounted}
           />
           {mounted &&
@@ -200,7 +200,7 @@ export default function ApplyForm({ jobId }: ApplyFormProps) {
       </form>
 
       {mounted && submitted && (
-        <div className="bg-green-50 border border-green-200 rounded-md p-4 mt-4">
+        <div className="bg-green-50 border border-green-600 rounded-md p-4 mt-4">
           <p className="text-green-700 font-medium">
             Application submitted successfully!
           </p>

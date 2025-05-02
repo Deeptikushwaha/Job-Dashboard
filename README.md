@@ -63,7 +63,6 @@ Visits /jobs-applied → Sees previously applied jobs
 - ✅ Formik + Yup for validation
 - ✅ LocalStorage-based application tracking
 - ✅ Applied Jobs dashboard
-- ✅ Dark mode support using dark: Tailwind utility
 
 ## Folder structure
 

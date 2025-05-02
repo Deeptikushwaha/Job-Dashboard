@@ -20,13 +20,13 @@ export default function JobDetailPage({ params }: Params) {
       {/* Job Description Section */}
       <div>
         <h1 className="text-2xl font-bold text-[#4640DE]">{job.title}</h1>
-        <p className="text-gray-600 dark:text-gray-300 mt-1">
+        <p className="text-gray-600 dark:text-gray-500 mt-1">
           {job.company} · {job.location}
         </p>
         <p className="text-gray-500 dark:text-gray-400">
           {job.type} · Starting: {job.dateOfJoining}
         </p>
-        <p className="mt-4 text-gray-700 dark:text-gray-200">
+        <p className="mt-4 text-gray-700 dark:text-gray-400">
           {job.description}
         </p>
 
@@ -34,7 +34,7 @@ export default function JobDetailPage({ params }: Params) {
           <h2 className="text-lg font-semibold text-[#4640DE]">
             Responsibilities
           </h2>
-          <ul className="list-disc list-inside text-sm mt-2 text-gray-700 dark:text-gray-300">
+          <ul className="list-disc list-inside text-sm mt-2 text-gray-700 dark:text-gray-400">
             {job.responsibilities.map((item, i) => (
               <li key={i}>{item}</li>
             ))}
@@ -57,7 +57,7 @@ export default function JobDetailPage({ params }: Params) {
 
         <div className="mt-6">
           <h2 className="text-lg font-semibold text-[#4640DE]">Salary</h2>
-          <p className="text-gray-800 dark:text-gray-200 mt-1">{job.salary}</p>
+          <p className="text-gray-800 dark:text-gray-400 mt-1">{job.salary}</p>
         </div>
       </div>
 
