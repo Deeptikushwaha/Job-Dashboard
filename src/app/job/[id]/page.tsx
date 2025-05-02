@@ -1,18 +1,15 @@
 import { notFound } from "next/navigation";
 import { Job } from "@/types/job";
-import { PageProps } from "@/types/PageProps";
+//import { PageProps } from "@/types/PageProps";
 import ApplyForm from "@/components/ApplyForm";
 import { jobs } from "@/lib/jobData";
 
-// interface JobDetailPageProps {
-//   params: {
-//     id: string;
-//   };
-// };
+type Params = Promise<{ id: string }>;
 
-export default function JobDetailPage({ params }: PageProps
+export default async function JobDetailPage({ params }: {params: Params}
 ) {
-  const job = (jobs as Job[]).find((job) => job.id === params.id);
+  const { id } = await params;
+  const job = (jobs as Job[]).find((job) => job.id === id);
 
   if (!job) return notFound();
 
