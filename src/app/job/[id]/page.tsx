@@ -4,13 +4,13 @@ import { Job } from "@/types/job";
 import ApplyForm from "@/components/ApplyForm";
 import { jobs } from "@/lib/jobData";
 
-interface Params  {
+interface JobDetailPageProps  {
   params: {
     id: string;
   };
 };
 
-export default function JobDetailPage({ params }: Params) {
+export default function JobDetailPage({ params }: JobDetailPageProps) {
   const job = (jobs as Job[]).find((job) => job.id === params.id);
 
   if (!job) return notFound();
