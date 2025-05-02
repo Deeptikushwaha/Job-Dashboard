@@ -5,11 +5,9 @@ import ApplyForm from "@/components/ApplyForm";
 import { jobs } from "@/lib/jobData";
 
 interface JobDetailPageProps  {
-  params: {
-    id: string;
-  };
+  params: Promise<{ id: string }>
 };
-
+//{id: string;};
 export default function JobDetailPage({ params }: JobDetailPageProps) {
   const job = (jobs as Job[]).find((job) => job.id === params.id);
 
