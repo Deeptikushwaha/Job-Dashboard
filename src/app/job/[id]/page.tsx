@@ -4,7 +4,7 @@ import { Job } from "@/types/job";
 import ApplyForm from "@/components/ApplyForm";
 import { jobs } from "@/lib/jobData";
 
-type Params = {
+interface Params  {
   params: {
     id: string;
   };
