@@ -45,7 +45,7 @@ export default function Frontsection() {
         </div>
 
         {/* Right Image */}
-        <div className="flex justify-center md:justify-end">
+        <div className="flex justify-end hidden lg:block">
           <Image
             src="/hero-person.png"
             alt="Confident person"
