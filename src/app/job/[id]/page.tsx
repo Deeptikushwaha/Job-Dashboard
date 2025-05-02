@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import { Job } from "@/types/job";
-
+import { PageProps } from "@/types/PageProps";
 import ApplyForm from "@/components/ApplyForm";
 import { jobs } from "@/lib/jobData";
 
@@ -10,9 +10,8 @@ import { jobs } from "@/lib/jobData";
 //   };
 // };
 
-export default function JobDetailPage({ params }: {
-  params: { id: string };
-}) {
+export default function JobDetailPage({ params }: PageProps
+) {
   const job = (jobs as Job[]).find((job) => job.id === params.id);
 
   if (!job) return notFound();
