@@ -9,7 +9,7 @@ export default function Navbar() {
       <div className="max-w-[1200px] mx-auto px-4 py-3 flex items-center justify-between">
         <Link href="/">
           <h1 className="text-2xl font-bold" style={{ color: "#4640DE" }}>
-            JobFinder
+            💼 JobFinder
           </h1>
         </Link>
 

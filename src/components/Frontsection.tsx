@@ -13,7 +13,7 @@ export default function Frontsection() {
             {/* dark:text-white leading-tight */}
           <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 ">
             Discover more than <br />
-            <span className="text-blue-600">5000+ Jobs</span>
+            <span className="text-blue-400">5000+ Jobs</span>
           </h1>
           <p className="mt-6 text-gray-400 dark:text-gray-400 text-lg">
             Great platform for job seekers searching for new career heights and passionate about startups.

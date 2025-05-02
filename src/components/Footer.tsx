@@ -8,7 +8,7 @@ export default function Footer() {
 
         {/* Left: Logo and description */}
         <div>
-          <h2 className="text-xl font-semibold text-white">💼 JobHuntly</h2>
+          <h2 className="text-xl font-semibold text-white">💼 JobFinder</h2>
           <p className="text-sm text-gray-400 mt-3">
             Great platform for job seekers that are passionate about startups. Find your dream job easier.
           </p>
@@ -61,7 +61,7 @@ export default function Footer() {
 
       {/* Bottom row */}
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-sm text-gray-400 space-y-4 md:space-y-0">
-        <p>2021 © JobHuntly. All rights reserved.</p>
+        <p>2021 © JobFinder. All rights reserved.</p>
         <div className="flex space-x-4 text-white text-lg">
           <FaFacebookF />
           <FaInstagram />
