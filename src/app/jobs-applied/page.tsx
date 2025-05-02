@@ -17,7 +17,7 @@ export default function AppliedJobsPage() {
         return job ? { ...job, ...storedApplications[jobId] } : null;
       })
       .filter((job) => job !== null);
-
+ 
     setAppliedJobs(jobApplications as JobApplication[]);
   }, []);
 

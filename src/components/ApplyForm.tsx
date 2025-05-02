@@ -134,7 +134,7 @@ export default function ApplyForm({ jobId }: ApplyFormProps) {
             <p className="text-sm text-red-500">{formik.errors.name}</p>
           )}
         </div>
-
+ 
         <div>
           <label className="block font-medium text-sm mb-1 text-gray-700 dark:text-gray-200">
             Email

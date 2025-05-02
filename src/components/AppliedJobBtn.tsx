@@ -12,7 +12,7 @@ export default function AppliedJobsButton() {
       <button
         className={`px-4 py-2 rounded-md font-medium transition 
           ${
-            isActive
+            isActive 
               ? "bg-[#4640DE] text-white"
               : "text-[#4640DE] border border-[#4640DE] hover:bg-[#4640DE] hover:text-white"
           }`}

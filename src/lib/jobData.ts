@@ -53,7 +53,7 @@ export const jobs: Job[] = [
       "Conduct user research and usability testing",
       "Collaborate closely with product and engineering teams",
       "Maintain and evolve the design system",
-    ],
+    ], 
     techStack: ["Figma", "Adobe XD", "Miro", "HTML/CSS"],
     dateOfJoining: "2025-05-20",
     salary: "$5,000/month (Contract)",

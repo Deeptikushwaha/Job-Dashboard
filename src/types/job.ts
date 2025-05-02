@@ -13,7 +13,7 @@ export type Job = {
 };
 export interface JobApplication extends Job {
   name: string;
-  email: string;
+  email: string; 
   resumeLink: string;
   coverLetter: string;
   status: "applied" | "in progress" | "rejected";

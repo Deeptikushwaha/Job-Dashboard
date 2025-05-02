@@ -8,14 +8,14 @@ export default function JobCard({ job }: { job: Job }) {
       <p className="text-sm text-gray-600 dark:text-gray-300">{job.company}</p>
       <p className="text-sm text-gray-500 dark:text-gray-400">
         {job.location} · {job.type}
-      </p>
+      </p> 
       <p className="mt-2 text-sm text-gray-700 line-clamp-3">{job.overview}</p>
 
       <Link href={`/job/${job.id}`}>
         <button className="mt-4 px-4 py-2 text-sm border border-[#4640DE] text-[#4640DE] rounded-md hover:bg-[#4640DE] hover:text-white transition">
           Apply
         </button>
-      </Link>
+      </Link> 
     </div>
   );
 }

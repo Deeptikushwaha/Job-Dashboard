@@ -66,7 +66,7 @@ export default function JobDetailPage({ params }: Params) {
         <h2 className="text-xl font-bold text-[#4640DE] mb-4">
           Apply for this job
         </h2>
-        <ApplyForm jobId={job.id} />
+        <ApplyForm jobId={job.id} /> 
       </div>
     </div>
   );
