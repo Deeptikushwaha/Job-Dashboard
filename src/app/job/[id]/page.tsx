@@ -4,8 +4,10 @@ import { Job } from "@/types/job";
 import ApplyForm from "@/components/ApplyForm";
 import { jobs } from "@/lib/jobData";
 
-interface JobDetailPageProps  {
-  params: {id: string;}
+interface JobDetailPageProps {
+  params: {
+    id: string;
+  };
 };
 
 export default function JobDetailPage({ params }: JobDetailPageProps) {
